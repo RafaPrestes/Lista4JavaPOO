@@ -22,8 +22,8 @@ public class AlunoPosGraduacao extends Aluno{
 
     @Override
     public String toString() {
-       return "----------Aluno Pos Graduação---------" + "Curso: " + getCurso() + "\nNome: " + getNome() 
-               + "\nRA" + getRa() + "\nAno de conclusão: " + this.anoConclusaoGraduacao;
+       return "----------Aluno Pos Graduação---------" + "\nCurso: " + getCurso() + "\nNome: " + getNome() 
+               + "\nRA: " + getRa() + "\nAno de conclusão: " + this.anoConclusaoGraduacao;
     }
     
 
