@@ -22,7 +22,8 @@ public class AlunoGraduacao extends Aluno {
 
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return "----------Aluno Graduação---------"+ "\nCurso: " + getCurso() + "\nNome: " + getNome() + 
+                "\nRA: " + getRa() + "\nAno de Conclusão: " + this.anoConclusaoEnsinoMedio;
     }
 
     public String getAnoConclusaoEnsinoMedio() {

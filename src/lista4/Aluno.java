@@ -26,7 +26,7 @@ public class Aluno {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "----------Aluno---------" + "\nCurso: " + getCurso() + "\nNome: " + getNome() + "\nRA" + getRa();
     }
 
     public String getRa() {
