@@ -5,27 +5,26 @@
  */
 package lista4;
 
-/**
- *
- * @author Usuário
- */
+                            //Herança
 public class AlunoGraduacao extends Aluno {   
     private String anoConclusaoEnsinoMedio;
-
+    
+    //Consturtor Vazio
     public AlunoGraduacao() {
     }
-
+    
+    //Construtor herdando classe Pai + o parâmetro da sua própria classe
     public AlunoGraduacao(String anoConclusaoEnsinoMedio, String ra, String nome, String curso) {
         super(ra, nome, curso);
         this.anoConclusaoEnsinoMedio = anoConclusaoEnsinoMedio;
     }
 
-    @Override
+    @Override    //Polimorfismo de sobrescrita
     public String toString() {
-        return "----------Aluno Graduação---------"+ "\nCurso: " + getCurso() + "\nNome: " + getNome() + 
-                "\nRA: " + getRa() + "\nAno de Conclusão: " + this.anoConclusaoEnsinoMedio;
+        return "----------Aluno Graduação---------" + super.toString() + "Ano Conclusão Ensino Medio: " + this.anoConclusaoEnsinoMedio;
     }
 
+    // Método get e set
     public String getAnoConclusaoEnsinoMedio() {
         return anoConclusaoEnsinoMedio;
     }

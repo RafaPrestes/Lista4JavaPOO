@@ -15,9 +15,7 @@ public class Main {
        int opc = 0, tipo;
        String nome = null, ra , curso, ano;
        ArrayList<Aluno> listAluno = new ArrayList<>();
-      
-       
-  
+ 
         while (opc!= 3){
             opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Inserir Aluno \n2 - Exibir Alunos \n3 - Sair"));
             

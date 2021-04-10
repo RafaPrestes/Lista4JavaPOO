@@ -5,30 +5,30 @@
  */
 package lista4;
 
-/**
- *
- * @author Usuário
- */
+
 public class Aluno {
     
     private String ra;
     private String nome;
     private String curso;
-
+    
+    //Construtor Vazio
     public Aluno() {
     }
-
+    
+    //Construtor com parâmetros
     public Aluno(String ra, String nome, String curso) {
         this.ra = ra;
         this.nome = nome;
         this.curso = curso;
     }
 
-    @Override
+    @Override     //Polimorfismo de sobrescrita
     public String toString() {
-        return "----------Aluno---------" + "\nCurso: " + getCurso() + "\nNome: " + getNome() + "\nRA" + getRa();
+        return "\nCurso: " + getCurso() + "\nNome: " + getNome() + "\nRA: " + getRa() + "\n";
     }
-
+    
+    //Métodos get e set
     public String getRa() {
         return ra;
     }
